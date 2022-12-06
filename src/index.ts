@@ -24,10 +24,10 @@ async function start() {
 
     await importx(`${dirname(import.meta.url)}/commands/**/*.{js,ts}`);
   
-    if (!process.env.token) {
+    if (!process.env.discord_token) {
         throw Error("Could not find token in your environment");
       }
-      await client.login(process.env.token);
+      await client.login(process.env.discord_token);
       console.log("bot >> discordgpt connected \n"); 
     }
   

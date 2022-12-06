@@ -30,10 +30,10 @@
     "@discordjs/builders": "^1.4.0",
     "@discordjs/rest": "^1.4.0",
     "@discordx/importer": "^1.1.10",
+    "chatgpt": "^1.4.0",
     "discord-api-types": "^0.37.21",
     "discord.js": "^14.7.1",
     "discordx": "^11.5.0",
-    "dotenv": "^16.0.3",
-    "openai": "^3.1.0"
+    "dotenv": "^16.0.3"
   }
 }
