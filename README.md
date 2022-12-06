@@ -1,3 +1,3 @@
-# discordGPT
-A simple Discord chatbot incorporating OpenAI's GPT-3 model. Developed using discord.js, discordx, and OpenAI.
+# discordCGPT
+A simple Discord chatbot incorporating OpenAI's ChatGPT demo. Developed using discord.js, discordx, and chatgpt.
 
