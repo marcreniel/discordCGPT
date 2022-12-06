@@ -1,22 +1,22 @@
 {
-  "name": "discordgpt",
+  "name": "discordcgpt",
   "version": "1.0.0",
-  "description": "A Discord chatbot incorporating OpenAI's GPT-3 model",
+  "description": "A simple Discord chatbot incorporating OpenAI's ChatGPT demo",
   "main": "src/index.ts",
   "author": "Marc Reniel Bernardino",
   "license": "MIT",
   "type": "module",
-  "homepage": "https://github.com/imedra/discordgpt#readme",
+  "homepage": "https://github.com/imedra/discordCGPT#readme",
   "scripts": {
     "start": "ts-node-esm src/index.ts",
     "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imedra/discordgpt.git"
+    "url": "git+https://github.com/imedra/discordCGPT.git"
   },
   "bugs": {
-    "url": "https://github.com/imedra/discordgpt/issues"
+    "url": "https://github.com/imedra/discordCGPT/issues"
   },
   "devDependencies": {
     "@types/node": "^18.11.11",
