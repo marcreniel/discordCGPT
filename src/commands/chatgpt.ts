@@ -19,7 +19,7 @@ export class discordcgpt {
     // Create text input fields
     const chatInputComponent = new TextInputBuilder()
       .setCustomId("chatInput")
-      .setLabel("Favorite TV show")
+      .setLabel("Input your prompt for ChatGPT to respond to:")
       .setStyle(TextInputStyle.Paragraph);
 
     const response = new ActionRowBuilder<TextInputBuilder>().addComponents(
