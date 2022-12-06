@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "description": "A Discord chatbot incorporating OpenAI's GPT-3 model",
   "main": "src/index.ts",
+  "author": "Marc Reniel Bernardino",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://github.com/imedra/discordgpt#readme",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node-esm src/index.ts",
     "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/imedra/discordgpt.git"
   },
-  "author": "Marc Reniel Bernardino",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/imedra/discordgpt/issues"
   },
-  "homepage": "https://github.com/imedra/discordgpt#readme",
   "devDependencies": {
     "@types/node": "^18.11.11",
     "@typescript-eslint/eslint-plugin": "^5.45.1",
@@ -28,8 +29,10 @@
   "dependencies": {
     "@discordjs/builders": "^1.4.0",
     "@discordjs/rest": "^1.4.0",
+    "@discordx/importer": "^1.1.10",
     "discord-api-types": "^0.37.21",
     "discord.js": "^14.7.1",
+    "discordx": "^11.5.0",
     "dotenv": "^16.0.3"
   }
 }
