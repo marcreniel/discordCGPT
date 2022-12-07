@@ -7,7 +7,7 @@ import { ChatGPTAPI } from 'chatgpt';
 
 // Connecting to ChatGPT API (Unofficial) 
 const api = new ChatGPTAPI({ sessionToken: process.env.openai_token! })
-await api.ensureAuth()
+await api.ensureAuth();
 
 @Discord()
 export class discordcgpt {

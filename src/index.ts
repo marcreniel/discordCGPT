@@ -1,7 +1,7 @@
 // Import Required Libraries
 import "dotenv/config"
 import { Client } from "discordx";
-import { IntentsBitField } from "discord.js";
+import { ActivityType, IntentsBitField } from "discord.js";
 import { dirname, importx } from "@discordx/importer";
 
 async function start() {
@@ -34,6 +34,7 @@ async function start() {
       }
       await client.login(process.env.discord_token);
       console.log("bot >> discordCGPT connected \n"); 
+      client.user!.setPresence({ activities: [{ name: `to /chatgpt`, type: ActivityType.Playing}], status: 'online' });
     }
   
   start();
