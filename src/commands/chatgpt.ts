@@ -11,7 +11,7 @@ await api.ensureAuth();
 
 @Discord()
 export class discordcgpt {
-  @Slash({ description: "ChatGPT", name:"chatgpt" })
+  @Slash({ description: "Opens the discordCGPT Menu.", name:"chatgpt" })
   modal(interaction: CommandInteraction): void {
     // Create the modal
     const modal = new ModalBuilder()
