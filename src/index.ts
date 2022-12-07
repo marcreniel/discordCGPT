@@ -34,7 +34,7 @@ async function start() {
       }
       await client.login(process.env.discord_token);
       console.log("bot >> discordCGPT connected \n"); 
-      client.user!.setPresence({ activities: [{ name: `to /chatgpt`, type: ActivityType.Playing}], status: 'online' });
+      client.user!.setPresence({ activities: [{ name: `with /chatgpt`, type: ActivityType.Playing}], status: 'online' });
     }
   
   start();

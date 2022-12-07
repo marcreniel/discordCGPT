@@ -50,14 +50,20 @@ export class discordcgpt {
       ) 
       let response = await api.sendMessage(chatInput);
       if (response.length >= 2000) {
-        response = response.substring(0, 1999);
-      }
+        const responseIntro = response.substring(0, 1999);
+        response = response.substring(1999, response.length);
+        await interaction.editReply(
+          `${responseIntro}`
+        )    
+        interaction.channel!.send(response);
+      } else {
       await interaction.editReply(
         `${response}`
       )    
+    }
     } catch(err){
       await interaction.reply(
-        "ChatGPT has timed out. Please try again."
+        "ChatGPT has thrown an error. Please try again."
       )        
     }
 
